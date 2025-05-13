@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickr Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="logo">
+      <div class="logo-text">
+       <h1>Tickr&#10004;</h1>
+       <hr>
+      </div>
+    </div>
+    <div class="contact-container">
+    <form id="form" class="contact-left">
+      <div class="contact-left-title">
+        <h2>Drop your deets</h2>
+        <hr>
+      </div>
+
+      <input type="text" id="name" placeholder="Your Name" class="contact-inputs">
+      <span class="error"></span>
+
+      <input type="tel" id="phone" placeholder="Your Phone Number" class="contact-inputs">
+      <span class="error"></span>
+
+      <input type="email" id="email" placeholder="Your Email" class="contact-inputs">
+      <span class="error"></span>
+
+      <button class="submit" id="submit" type="submit">Submit<img class="arrow" src="arrow.png" alt="arrow"></button>
+    </form>
+      <div class="contact-right">
+        <img src="right-img.png" alt="right image">
+      </div>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>

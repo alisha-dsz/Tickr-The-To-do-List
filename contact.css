@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit';
+    background: linear-gradient(#fef9d7, #f9c9f9);
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.logo-text h1 {
+    color: #41b2a1;
+    font-family: 'Aldrich';
+    margin-bottom: 5px;
+    display: block;
+}
+.logo hr {
+    border: none;
+    width: 80px;
+    height: 5px;
+    background-color: #41b2a1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 5%;
+    gap: 80px;
+    min-height: 90vh;
+    margin-top: -40px;
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    gap: 20px;
+    background: rgba(242, 243, 244, 0.736); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #944c9c;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 140px;
+    height: 5px;
+    background-color: #944c9c;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-inputs:focus {
+    border: 2px solid #944c9c;
+}
+.contact-left button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ee90ae, #83438a);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+.contact-left button img {
+    height: 15px;
+}
+.contact-right {
+    display: flex;
+    justify-content: center;
+}
+.contact-right img {
+    width: 100%;
+    max-width: 350px;
+    margin-left: 50px; 
+}
+.contact-left button:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    .contact-left {
+        align-items: center;
+    }
+    .contact-left-title h2 {
+        font-size: 32px;
+    }
+    .contact-left-title hr {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .contact-right img {
+        margin-left: 0; 
+    }
+}
+@media (max-width: 600px) {
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-left-title h2 {
+        font-size: 28px;
+    }
+    .contact-left {
+        padding: 20px;
+    }
+    .contact-inputs {
+        width: 100%;
+    }
+}

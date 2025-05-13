@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit';
+    background:rgb(255, 253, 222);
+    height:100vh;
+}
+.submit{
+    justify-items: center;
+    margin-top:60px;
+}
+.submit img{
+    margin-top: 80px;
+}
+.exclam{
+    margin-top:-70px;
+    margin-bottom: 20px;
+}
+.phrase{
+    font-size:19px;
+    margin-bottom:9px;
+}
+.logo{
+    color: #41b2a1;
+    font-family: 'Aldrich';
+}
+.click{
+    width:120px;
+    height:40px;
+    border-radius:20px;
+    border:none;
+    background: linear-gradient(200deg, #f48bfe, #ffffff);
+    font-size:15px;  
+    transition: tranform 0.15s ease;
+}
+.click:hover{
+    transform:scale(1.1)
+}
